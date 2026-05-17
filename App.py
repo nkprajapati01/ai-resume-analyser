@@ -75,7 +75,7 @@ cursor = None
 
 try:
     connection = psycopg2.connect(
-    st.secrets["postgresql://neondb_owner:npg_6rnH2qWLlKOs@ep-long-pond-apsxssbo.c-7.us-east-1.aws.neon.tech/neondb?sslmode=require"]
+    st.secrets["DATABASE_URL"]
     )
 
     cursor = connection.cursor()
