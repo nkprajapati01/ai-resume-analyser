@@ -74,11 +74,8 @@ connection = None
 cursor = None
 
 try:
-    connection = pymysql.connect(
-        host=st.secrets["mysql"]["host"],
-        user=st.secrets["mysql"]["user"],
-        password=st.secrets["mysql"]["password"],
-        database=st.secrets["mysql"]["database"]
+    connection = psycopg2.connect(
+    st.secrets["DATABASE_URL"]
     )
 
     cursor = connection.cursor()
