@@ -4,7 +4,7 @@ import base64
 import random
 import time
 import datetime
-import pymysql
+import psycopg2
 import os
 import socket
 import platform
