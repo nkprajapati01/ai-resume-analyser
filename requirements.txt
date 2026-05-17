@@ -9,7 +9,7 @@ pyresparser==1.0.6
 pdfminer.six
 pdfplumber
 docx2txt
-PyMySQL
+psycopg2-binary
 streamlit-tags
 geopy
 geocoder
